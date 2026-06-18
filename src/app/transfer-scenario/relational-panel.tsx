@@ -106,7 +106,7 @@ function MessageItem({ message, onAction }: { message: ChatMessage; onAction: (i
           isUser ? "bg-[#006dff] text-white" : "bg-[#f5f5f5] text-black"
         }`}
       >
-        {!isUser && <p className={`${FONT_SB} text-[11px] text-[#006dff] mb-[4px]`}>VANE</p>}
+        {!isUser && <p className={`${FONT_SB} text-[11px] text-[#006dff] mb-[4px]`}>Asistente virtual</p>}
         <p className={`${FONT_REG} text-[15px] leading-[22px] whitespace-pre-wrap`}>{message.content}</p>
         {message.actions && message.actions.length > 0 && (
           <div className="flex flex-col gap-[8px] mt-[12px]">
@@ -285,7 +285,7 @@ export function MinimizedTransferBubble() {
       <div className="shrink-0">
         <VaneIconBubble size={36} />
       </div>
-      <span className={`${FONT_SB} text-[12px] truncate`}>{last?.content.slice(0, 34) ?? "VANE"}…</span>
+      <span className={`${FONT_SB} text-[12px] truncate`}>{last?.content.slice(0, 34) ?? "Asistente virtual"}…</span>
     </motion.button>
   );
 }
